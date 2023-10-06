@@ -1,4 +1,4 @@
-##My Configuration files for Neovim.
+## My Configuration files for Neovim.
 ![screenshot](./screenshot.png)
 ___
 This configuration includes Nvim-treesitter, Indent-blankline, lualine, colorizer, nvim-tree, coc and nvim-autopairs.    

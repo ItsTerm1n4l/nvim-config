@@ -5,7 +5,7 @@ This configuration includes Nvim-treesitter, Indent-blankline, lualine, colorize
 Themed with [spice.nvim](https://github.com/ItsTerm1n4l/spice.nvim)   
 
 ### Installation.
-First install nvim-plug if it is not already installed.
+First install nvim-plug if it is not already installed.    
 `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
 

@@ -8,45 +8,48 @@ call plug#begin('~/.config/nvim/plugins/')
   Plug 'nvim-tree/nvim-tree.lua'
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'nvim-lualine/lualine.nvim'
-  Plug 'ItsTerm1n4l/prime.nvim'
+  Plug 'ItsTerm1n4l/spice.nvim'  
   Plug 'windwp/nvim-autopairs'
 call plug#end()
 lua require('init')
 
 
 
-
-" Set colorscheme (my modified version)
-"source $HOME/.config/nvim/themes/prime.vim
-
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
 set nofoldenable
+set cursorline
 
 let g:prime_contrast = v:true
 
+" Set colorscheme
+colorscheme spice
 
-colorscheme prime
 
-"source $HOME/.config/nvim/lua/indent.lua
-"highlight IndentBlanklineIndent1 guifg=#458588 gui=nocombine
 set tabstop=4
 set shiftwidth=4
 set number
 set numberwidth=2
+
 filetype indent on
 " Open nvim-tree
 " NvimTreeOpen
 
 " Keybinds
-imap <C-s> <esc>:w<enter>i
+imap <C-s> <esc>:w<enter>i<Right>
 imap <C-q> <esc>:q<enter>
 map <C-q> <esc>:q<enter>
-imap <C-\> <esc>:undo<enter>i
-map <C-\> <esc>:undo<enter>
-imap <C-r> <esc>:redo<enter>i
+imap <C-\> <esc>:undo<enter>i<Right>
+map <C-\> <esc>:undo<enter><Right>
+imap <C-r> <esc>:redo<enter>i<Right>
+map <C-t> <esc>:NvimTreeToggle<enter> 
+imap <C-t> <esc>:NvimTreeToggle<enter>i<Right>
+nnoremap ; :
+vnoremap ; :
+set nowrap
 
 " Various settings
+command Tree NvimTreeToggle
 
 let g:nvim_tree_auto_close=1
 let g:indent_blankline_char = '¦'

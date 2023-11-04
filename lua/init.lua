@@ -7,9 +7,10 @@ require('nvim-tree').setup({
  },
   view = { width = 15 }
 })
-require("nvim-autopairs").setup {}
 
+require("nvim-autopairs").setup {}
+require("nvim-tree")
 require'colorizer'.setup()
-require('plugins/lualine').setup {}
+require('plugins/lualine')
 require('plugins/treesitter')
 require('plugins/indent-blankline')

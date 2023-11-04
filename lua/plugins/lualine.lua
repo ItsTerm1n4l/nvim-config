@@ -1,8 +1,22 @@
 require('lualine').setup {
-  options = { 
-  theme = 'prime', 
-  component_separators = { left = '', right = '' },
-  section_separators = { left = '', right = '' },
+	options = { 
+  theme = 'spice', 
+  component_separators = { left = '•', right = '•' }, --  ·•
+  section_separators = { left = '' , right = ''  }, --   
   globalstatus = true,
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

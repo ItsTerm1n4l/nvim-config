@@ -10,7 +10,6 @@ call plug#begin('~/.config/nvim/plugins/')
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'ItsTerm1n4l/spice.nvim'  
   Plug 'windwp/nvim-autopairs'
-"  Plug 'alvan/vim-closetag'
   Plug 'windwp/nvim-ts-autotag'
 call plug#end()
 lua require('init')
@@ -21,8 +20,6 @@ set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
 set nofoldenable
 set cursorline
-
-let g:prime_contrast = v:true
 
 " Set colorscheme
 colorscheme spice
@@ -53,13 +50,7 @@ set nowrap
 " Various settings
 command Tree NvimTreeToggle
 
-let g:nvim_tree_auto_close=1
-let g:indent_blankline_char = '¦'
-let g:indent_blankline_filetype_exclude = [
-      \ 'help', 'markdown', 'text', 'rst', 'man',
-      \ 'startify', 'tsplayground',
-      \]
-
+"CoC settings
 " use <tab> for trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
   let col = col('.') - 1

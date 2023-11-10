@@ -10,6 +10,8 @@ call plug#begin('~/.config/nvim/plugins/')
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'ItsTerm1n4l/spice.nvim'  
   Plug 'windwp/nvim-autopairs'
+"  Plug 'alvan/vim-closetag'
+  Plug 'windwp/nvim-ts-autotag'
 call plug#end()
 lua require('init')
 
